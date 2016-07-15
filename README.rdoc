@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Very basic app to show that we can connect to Xero (accounting app) 
+  and extract data, returning it as JSON. This must be done using an
+  incoming HTTP request. 
 
-Things you may want to cover:
+  1, Install gem httpie locally
+    'gem install httpie'
 
-* Ruby version
+    You can now generate http requests to localhost like this:
 
-* System dependencies
+    'http -j GET http://localhost:3000/monies_due'
 
-* Configuration
+  2, In a separate terminal start rails 'rails s'
 
-* Database creation
+  3, Generate the HTTP request, follow the authentification prompt 
+  in the terminal where the rails app is running. 
 
-* Database initialization
+  4, Observe the JSON response in the window you sent the HTTP request in. 
 
-* How to run the test suite
+  5, Apologies for the awful user 'experience', it's simply a proof of concept.
 
-* Services (job queues, cache servers, search engines, etc.)
+  6, available routes to try:
+    'http -j GET http://localhost:3000/invoices'
+    'http -j GET http://localhost:3000/monies_due'
+    'http -j GET http://localhost:3000/contact_names'
 
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
