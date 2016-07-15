@@ -4,6 +4,8 @@
   and extract data, returning it as JSON. This must be done using an
   incoming HTTP request. 
 
+  You'll need 2 terminal tabs open.
+
   1, Install gem httpie locally
     'gem install httpie'
 
@@ -11,9 +13,9 @@
 
     'http -j GET http://localhost:3000/monies_due'
 
-  2, In a separate terminal start rails 'rails s'
+  2, In one terminal start rails 'rails s'
 
-  3, Generate the HTTP request, follow the authentification prompt 
+  3, Generate the HTTP request in another terminal, follow the authentification prompt 
   in the terminal where the rails app is running. 
 
   4, Observe the JSON response in the window you sent the HTTP request in. 
