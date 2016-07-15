@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :transactions
     resources :invoices 
     get 'monies_due', to: 'invoices#monies_due'
+    get 'contact_names', to: 'invoices#contact_names'
   end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
