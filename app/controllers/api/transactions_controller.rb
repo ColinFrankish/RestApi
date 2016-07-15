@@ -4,6 +4,7 @@ module Api
     skip_before_filter :verify_authenticity_token
 
     def index
+
       transactions = Transaction.all
       render :json => transactions
     end 

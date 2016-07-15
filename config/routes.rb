@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json }, path: '/'  do
   
     resources :transactions
-    resources :invoices
-
+    resources :invoices 
+    get 'monies_due', to: 'invoices#monies_due'
   end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
